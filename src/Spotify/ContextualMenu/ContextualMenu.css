@@ -1,0 +1,32 @@
+.ContextualMenu{
+    position: absolute;
+    background-color: #171717;
+    color: white;
+    font-size: 19px;
+}
+
+.playlist{
+    height: 51px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    width: 233px;
+    background-color: #282828;
+    border-radius: 5px;
+}
+
+li{
+    height:30px;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    display:flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li:hover{
+    background-color: #303030 ;
+}

@@ -1,0 +1,69 @@
+.PlaylistModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.PlaylistModalDiv{
+    background-color: #171717;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.PlaylistModalTitle {
+    background-color: #171717;
+    height: 51px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.PlaylistModalBody {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.PlaylistModalInput {
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 26px;
+    width: 215px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.ant-input:hover {
+    border-color: white;
+    border-inline-end-width: 1px;
+}
+
+.ant-input:focus {
+    border-color: white;
+    border-inline-end-width: 1px;
+}
+
+.PlaylistModalButton {
+    width: 65px;
+    height: 22px;
+    background-color: #1DB954;
+    border-radius: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19px;
+    margin-left: 166px;
+}
+
+.ant-btn-default:not(:disabled):hover {
+    color: white;
+    border-color: white;
+}

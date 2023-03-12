@@ -1,0 +1,76 @@
+.leftSection {
+    width: 301px;
+    height: calc(100% - 112px);
+    background: #000000;
+    position: fixed;
+}
+
+.logo {
+    position: absolute;
+    width: 164px;
+    height: 49px;
+    left: 29px;
+    top: 32px;
+}
+
+.menuSection {
+    margin-top: 100px;
+    background-color: black;
+}
+
+.playlistSection {
+    max-height: 560px;
+    overflow-y: auto;
+    background-color: black;
+}
+
+.playlistSection::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+}
+
+.playlistSection::-webkit-scrollbar {
+    width: 10px;
+}
+
+.playlistSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #737272;
+    border: 1px solid #000;
+}
+
+.RectangleLogo {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RectangleLogoPlaylist {
+    background-color: white;
+}
+
+.RectangleLogoLikedSongs {
+    background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%)
+}
+
+.ant-menu-item-selected {
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+.ant-menu-item:active {
+    background-color: #141414 !important;
+    color: white !important;
+}
+
+.ant-menu-item-selected:active {
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+
+

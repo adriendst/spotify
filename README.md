@@ -25,7 +25,7 @@
 
 ## Features
 
-### Home page
+### Spotify page
 
 -   [ ] Display your playlist
 -   [ ] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma

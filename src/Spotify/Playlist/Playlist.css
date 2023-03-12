@@ -1,0 +1,91 @@
+.PlaylistColorBanner{
+    height: 245px;
+    display: flex;
+}
+
+.PlaylistColorInBanner{
+    width: 185px;
+    height: 185px;
+    margin-left: 25px;
+    margin-top: 27px;
+    font-size: 38px;
+    color: white;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.PlaylistNameInBanner{
+    margin-top: 63px;
+    font-size: 96px;
+    margin-left: 40px;
+    color:white;
+    font-weight: bold;
+}
+
+.Search{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30.8px;
+    margin-top: 15px;
+}
+
+.SearchInput{
+    width: 256px;
+    height: 32px;
+    border-radius: 26px;
+}
+
+.SelectOrder{
+    width: 104.2px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.Table{
+    margin-top: 24px;
+    margin-left: 43px;
+    margin-right: 28px;
+}
+
+.index{
+    width: 5% !important;
+    vertical-align: middle !important;
+}
+
+.heart{
+    width: 5% !important;
+    vertical-align: middle !important;
+}
+
+.title{
+    width: 40% !important;
+    vertical-align: middle !important;
+}
+
+.year{
+    width: 10% !important;
+    vertical-align: middle !important;
+}
+
+.genre{
+    width: 20% !important;
+    vertical-align: middle !important;
+}
+
+.popularity{
+    width: 10% !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.duration{
+    width: 10% !important;
+    vertical-align: middle !important;
+    text-align: right !important;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th, .ant-table-wrapper .ant-table-thead >tr>td{
+    position : unset !important;
+}
