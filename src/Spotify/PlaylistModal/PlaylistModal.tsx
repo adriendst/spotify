@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 
 interface PlaylistModalInterface {
     onClosePlaylist(): void;
-
     onSavePlaylist(name: string): void;
 }
 
@@ -18,7 +17,6 @@ const PlaylistModal = ({onSavePlaylist, onClosePlaylist}: PlaylistModalInterface
     const playlist = useSelector((state: State) => state.spotify.playlists)
 
     const [newPlaylistName, setNewPlaylistName] = useState<string>();
-
 
     const handleOnSave = () => {
         if (newPlaylistName) {

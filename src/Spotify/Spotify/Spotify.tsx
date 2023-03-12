@@ -5,7 +5,6 @@ import {
     addPlaylist,
     displayPlaylistMenu,
     displayPlaylistModal,
-    playlistsSlice
 } from "../../Slices/playlistsSlice";
 import PlaylistModal from "../PlaylistModal/PlaylistModal";
 import {State} from "../../store";

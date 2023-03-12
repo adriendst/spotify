@@ -11,21 +11,12 @@ import Duration from "../Duration/Duration";
 import Heart from "../Heart/Heart";
 import './Playlist.css';
 import {useParams} from "react-router-dom";
+import {Song} from "../../Slices/playlistsSlice";
 
 
 export interface PlaylistInterface {
     playlistName: string;
 }
-
-interface Song {
-    title: string,
-    artist: string,
-    genre: string,
-    year: number,
-    duration: number,
-    popularity: number,
-}
-
 
 const Playlist = ({playlistName}: PlaylistInterface) => {
     const {Option} = Select;
@@ -49,8 +40,6 @@ const Playlist = ({playlistName}: PlaylistInterface) => {
         console.log(newSort)
         songs(newValue);
     };
-
-
 
     const dispatch = useDispatch()
     const capitalizeFirstChar = (word: string) => {

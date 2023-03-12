@@ -21,8 +21,6 @@ const Heart = ({song}: HeartInterface) => {
     const likedSongs = useSelector((state: State) => state.spotify.playlists[0]);
     const dispatch = useDispatch()
     const checkIfLicked = (song: Song) => {
-        // const likedSongStrings = likedSongs.songs.map((likedSong) => JSON.stringify(likedSong, null, 2));
-        // const songString = JSON.stringify(song, null, 2);
         return likedSongs.songs.includes(song);
     }
     return (<div>
