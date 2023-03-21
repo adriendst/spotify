@@ -24,7 +24,7 @@ const MusicPlayer = () => {
                         </div>
                     </div>
                     <div className={'MusicHeart'}>
-                        {playingSong.song.title == "Pas de musique" ? "" : <Heart song={playingSong.song}/>}
+                        {playingSong.song.title === "Pas de musique" ? "" : <Heart song={playingSong.song}/>}
                     </div>
                 </div>
             </div>

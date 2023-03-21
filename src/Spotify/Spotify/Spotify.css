@@ -6,7 +6,7 @@
     background: #121212;
     width: 100%;
     margin-left: 301px;
-    height: 849px;
+    height: calc(100vh - 112px);
     overflow-y: auto
 }
 

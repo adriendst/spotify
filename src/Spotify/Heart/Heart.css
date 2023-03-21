@@ -2,3 +2,7 @@
     height: 13px;
     width: 13px;
 }
+
+img{
+    cursor: pointer;
+}

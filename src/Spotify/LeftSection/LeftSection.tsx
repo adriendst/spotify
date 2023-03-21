@@ -18,7 +18,7 @@ const LeftSection = ({onNewPlaylist}: LeftSectionInterface) => {
 
     const url = useParams();
     let selectedKey: string;
-    if (url.playlistName == undefined) {
+    if (url.playlistName === undefined) {
         selectedKey = "";
     } else {
         selectedKey = url.playlistName;

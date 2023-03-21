@@ -55,7 +55,7 @@ const topPlaylist = () => {
                 year: i
             };
 
-            let result = songs.filter(songs => songs.year == i)
+            let result = songs.filter(songs => songs.year === i)
             result.sort((a, b) => b.popularity - a.popularity);
             playlist.songs = result.slice(0, 50);
             topPlaylist.push(playlist)

@@ -48,7 +48,7 @@ const Playlist = ({playlistName}: PlaylistInterface) => {
 
     const playlistYear = playlistName.slice(6)
     const playlist = useSelector((state: State) => {
-        if (playlistName.slice(0, 6) == 'TOP 50') {
+        if (playlistName.slice(0, 6) === 'TOP 50') {
             return state.spotify.topPlaylists.filter(({year}) => year === parseInt(playlistYear))
         } else {
             return state.spotify.playlists.filter(({name}) => name === playlistName)
@@ -60,7 +60,7 @@ const Playlist = ({playlistName}: PlaylistInterface) => {
             return playlist[0].songs.filter((song) => {
                 return Object.entries(song).some(([key, value]) => {
                     if (typeof value === 'number') {
-                        if (key == 'duration') {
+                        if (key === 'duration') {
                             if (value % 60 < 10) {
                                 const duration = Math.floor(value / +60) + ':0' + value % 60
                                 return duration.toString().includes(newSearch)
@@ -74,6 +74,7 @@ const Playlist = ({playlistName}: PlaylistInterface) => {
                     } else if (typeof value === 'string') {
                         return value.toLowerCase().includes(newSearch.toLowerCase());
                     }
+                    return "";
                 });
             });
         } else {
@@ -161,9 +162,9 @@ const Playlist = ({playlistName}: PlaylistInterface) => {
                  style={{background: `linear-gradient(90deg, #${playlist[0].color1} 0%, #${playlist[0].color2} 100%)`}}>
                 <div className={'PlaylistColorInBanner'}
                      style={{background: `linear-gradient(180deg, #${playlist[0].color1} 0%, #${playlist[0].color2} 100%)`,}}>
-                    {playlist[0].name == 'Liked Songs' ?
+                    {playlist[0].name === 'Liked Songs' ?
                         <img src={'/BigHeart.png'} alt={'BigHeart'}/>
-                        : playlist[0].name == 'TOP 50' ? playlist[0].name + ' ' + playlist[0].year : ''}
+                        : playlist[0].name === 'TOP 50' ? playlist[0].name + ' ' + playlist[0].year : ''}
                 </div>
                 <div className={'PlaylistNameInBanner'}>
                     {playlist[0].name}
